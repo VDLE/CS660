@@ -1,0 +1,272 @@
+/*!
+ * Start Bootstrap - Full Slider HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.text{
+	position:relative;
+	left:5%;
+	top:7%;
+
+}
+
+.title{
+	font-size:140%;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-brand {
+    color: #89cff0;
+}
+
+.nav.navbar-nav li a {
+    color: #89cff0;
+}
+
+.nav-choice{
+	cursor:pointer;
+}
+
+a.link{
+	color: #999;
+	text-decoration: none;
+}
+
+a.link:hover{
+	color: #89cff0;;
+	text-decoration: none;
+}
+
+#menu{
+	background-color: rgba(0,46,98,.95);
+	color: #89cff0;
+}
+
+.submenu{
+	width: 74%;
+	height: 17%;
+	position: fixed;
+	z-index:1;
+	top: -20%;
+	left:15%;
+	color: #89cff0;
+}
+
+.column{
+	background-color: rgba(0,46,98,.95);
+	width:15%;
+	border-top: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	position: fixed;
+	z-index:-1;
+}
+
+.priority{
+	z-index: 6;
+}
+
+.column:hover{
+	background-color: rgba(128,127,132,.80);
+}
+
+.column:hover .link{
+	color: #fff;
+}
+
+.column:hover .link:hover{
+	color: #89cff0;
+}
+
+.deploy{
+    top:0%;
+}
+
+.content{
+	width: 70%;
+	height: 50%;
+	background-color: rgba(0,46,98,.8);
+	position: fixed;
+	z-index:1;
+	border: 1px solid #000;
+	transition: all 0.5s ease;
+	bottom: -100%;
+	left:14.5%;
+	color: #89cff0;
+	margin: 2%;
+	overflow-y: auto;
+}
+.content:hover{
+	bottom:5%;
+}
+
+.content2{
+	width: 70%;
+	height: 30%;
+	background-color: rgba(0,46,98,.8);
+	position: absolute;
+	z-index:1;
+	border: 1px solid #000;
+	transition: all 0.5s ease;
+	top: 90%;
+	left:15%;
+	color: #89cff0;
+}
+
+
+.name{
+	padding:0%;
+	width: 70%;
+	height: 15%;
+	background-color: rgba(0,46,98,.8);
+	position: fixed;
+	z-index:1;
+	border: 1px solid #000;
+	transition: all 0.5s ease;
+	top: 75%;
+	left:14.5%;
+	color: #89cff0;
+	margin: 2%;
+	cursor:pointer;
+}
+
+.name:hover .tri0{
+	border-top: 20px solid #fff;
+}
+
+p.main{
+	position:relative;
+	padding-top: .5%;
+	padding-left: 2%;
+	padding-bottom:0%;
+	font-size:250%;
+	font-weight: bold;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+p.sub{
+	position:relative;
+	padding-top:0%;
+	padding-left: 2%;
+	font-size:200%;
+	font-weight: bold;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+p.bold{
+	padding-left: 3%;
+	font-size:140%;
+	font-weight: bold;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+p.regular{
+	color: #BEBEBE;
+	padding-left: 5%;
+	font-size:150%;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+span.text{
+    background:#F8F8F8;
+    border: 4px solid #FF0000;
+    color: #FF0000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    position: fixed;
+    text-align: left;
+    text-transform: uppercase;
+    left:3%;
+	top: 90%;
+    display:none;
+    padding:0 20px;
+    z-index: 6;
+	font-size:125%;
+	font-weight: bold;
+}
+
+a:hover span.text{
+    display:block;
+}
+
+.slide0, .slide1 {
+    cursor: pointer;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid black;
+    background-color: #FFFF99;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 1px auto;
+    padding: 10px 15px 10px 10px;
+}
+
+.tri0 {
+	position:relative;
+    width: 0;
+    height: 0;
+	right: 50%;
+	bottom:120%;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-top: 20px solid #89cff0;
+    float: right;
+    -moz-transition: -moz-transform .3s;
+    -webkit-transition: -webkit-transform .3s;
+    -o-transition: -o-transform .3s;
+    transition: transform .3s;
+}
+
+.toggle {
+    -moz-transform: rotate(-180deg);
+     -o-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.custom {
+    width: 80%;
+}
+
+.customH{
+	height: 90%;
+}

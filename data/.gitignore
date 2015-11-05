@@ -1,0 +1,13 @@
+.DS_store
+*.out
+*.pyc
+*.*~
+test
+test.c
+test.py
+input.file
+parse.log
+tokenfile.txt
+parselog.txt
+parsetab.py
+

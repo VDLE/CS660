@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Compiler Construction - Team Afro</title>
+	
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/full-slider.css" rel="stylesheet">
+
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="menu" class="navbar navbar-inverse navbar-fixed-top priority" role="navigation">
+        <div class="container priority">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header priority">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand priority" href="#">CS660</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse priority" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="nav-choice" id="1">Symbol Table</a>
+                    </li>
+                    <li>
+                        <a class="nav-choice" id="2">Scanner</a>
+                    </li>
+                    <li>
+                        <a class="nav-choice" id="3">Parser</a>
+                    </li>
+                    <li>
+                        <a class="nav-choice" id="4">Abstract Syntax Table</a>
+                    </li>
+                    <li>
+                        <a class="nav-choice" id="5">Intermediate Code Generator</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
+        <div class="column 1">
+            <p class="text title">Symbol Table</p>
+            <p class="text">
+                <a class="link" id="symboltable.js" href="" data-toggle="modal" data-target="#myModal">Symbol Table File 
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" id="symbol_driver.js"  href="" data-toggle="modal" data-target="#myModal">Driver File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/symboltable.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+            </p>
+        </div>
+        <div class="column 2" value="2">
+            <p class="text title">Scanner</p>
+            <p class="text">
+                <a class="link" id="cscanner.js" href="" data-toggle="modal" data-target="#myModal">Scanner File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/demo1.zip">Scanner Test Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+                <a class="link" href="data/scanner.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+
+            </p>
+        </div>
+        <div class="column 3" value="3">
+            <p class="text title">Parser</p>
+            <p class="text">
+                <a class="link" id="cparser.js"  href="" data-toggle="modal" data-target="#myModal">Parser File					
+					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+				</a><br>
+                <a class="link" href="data/demo1.zip">Parser Unit Tests					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+                <a class="link" href="data/parser.zip">Collective Files					
+					<span class="text">Click to download Zip File</span> 
+				</a><br>
+            </p>
+        </div>
+        <div class="column 4" value="4">
+            <p class="text title">AST</p>
+            <p class="text">
+                <a class="link" href="#none">AST File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">AST Unit Tests					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Driver File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Collective Files					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+            </p>
+        </div>
+        <div class="column 5" value="5">
+            <p class="text title">Code Gen</p>
+            <p class="text">
+                <a class="link" href="#none">Code Gen File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Code Gen Unit Tests					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Driver File					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+                <a class="link" href="#none">Collective Files					
+					<span class="text">Completely Inactive.</span> 
+				</a><br>
+            </p>
+        </div>
+    </nav>
+	
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/fletcher-spring.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/mason-valley.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('images/mt-washington.jpg');"></div>
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!--Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a> 
+    </header>
+	
+	<div class="name">
+		<p class="main">CS660 Compiler Construction<p>
+		<p class="sub">Graduate Team: Chase Carthen, Nolan Burfield, Vinh Le<p>
+		<div class="tri0"></div>
+	</div>
+	
+	<div class="content off">
+		<p class="main">Overview<p>
+		<p class="sub">Language Features: <p>
+		<p class="bold">Currently Operational: <p>		
+		<p class="regular">
+			Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+			Arrays - Fully Functional with symbol table.<br>
+			Pointers - Fully Functional with symbol table.<br>
+			Functions - Fully Functional with symbol table.<br>
+			Constants - Cannot allow assignment of constant values.<br>
+			Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+			Looping - Currently able to handle new scopes.<br>
+			Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+		<p>
+		<p class="sub">Implementations: <p>
+		<p class="bold">Currently Operational: <p>
+		<p class="regular">
+			Symbol Table - Possesses a Function Node, an Array Node, a Variable Node, and Pointer Node. Currently utilizes a Red-Black Tree. <br>
+			Scanner - Capable of handling Lexical Errors. Errors are not terminating the program due to testing purposes. <br>Instead of <code>!!s</code>, it has been opted for <code>@</code>.<br>
+			Parser - Could use more work, obviously. Still a work in progress.<br>
+		<p>
+		<p class="sub">Assumptions Made: <p>
+		<p class="bold">Please don't be smartass: <p>
+		<p class="regular">You are not inputing headerfiles.<br>You are not inputing obscure unsigned or long types.<br>You are not Terrence.<p>
+		<p class="sub">Restrictions: <p>
+		<p class="bold">Current Notes: <p>
+		<p class="regular">The project itself only fails on grammar errors.<br>This is because we desire to see entire compile run through for testing purposes.<p>
+		
+		<p class="main">Directions<p>
+		<p class="sub">Dependencies: <p>
+		<p class="regular">
+			Python - This project was developed in the Python programming language. <br>
+			PiP - We used pip in order to install these python modules. <br>
+			PLY - We used this python equivalent of Flex and Yacc in order to deal with the input character stream.<br>
+			BinTrees - We used BinTrees in order to insert balanced Binary Trees within into the symbol table. <br>
+			<code>sudo apt-get install python-pip</code><br>
+			<code>sudo pip install ply bintrees</code>
+		<p>	
+		<p class="sub">Command Line Arguments: <p>
+		<p class="regular">
+			<code>-p</code> : Scan File <br>
+			<code>-h</code> : Help Message<br>
+			<code>-v</code> : Version Info <br>
+			<code>-t</code> : Token Log Output
+		<p>	
+		<p class="sub">How to Run: <p>
+		<p class="regular">
+			Click on any of the projects to see a preview of the code or download the entirety at the end<br>
+			of the section. <br>
+			To run this project, merely run the script from command line.<br>
+			<code>./demo1.sh</code> <br>
+			To run the driver for the symbol table, please use this command. <br>
+			<code>python symboltable_driver.py</code>
+		<p>
+		<p class="main">Files<p>	
+		<p class="sub">Descriptions: <p>	
+		<p class="regular">
+			The Symbol Table was made with the help of the bintree module and utilizes a red-black tree.<br>
+			The Scanner was developed with the PLY python module as an alternative to Flex.<br>
+			The Parser was developed with the PLY python module as an alternative to Bison. There were many <br>
+			errors that still need to be addressed in the Parser.
+		<p>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog custom">
+		<div class="modal-content customH">
+		  <div class="modal-body">
+			  <iframe id="target" src="http://wikipedia.com" width="100%" height="850px" frameborder="0" allowtransparency="true"></iframe>  
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 6000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
