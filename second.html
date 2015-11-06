@@ -30,7 +30,7 @@
 	
 </head>
 
-<body>
+<body style="overflow: hidden;">
 
     <!-- Navigation -->
     <nav id="menu" class="navbar navbar-inverse navbar-fixed-top priority" role="navigation">
@@ -48,6 +48,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse priority" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li>
+                        <a class="nav-choice" href="index.html" id="6">Home</a>
+                    </li>
                     <li>
                         <a class="nav-choice" id="1">Symbol Table</a>
                     </li>
@@ -73,60 +76,48 @@
             <p class="text title">Symbol Table</p>
             <p class="text">
                 <a class="link" id="symboltable.js" href="" data-toggle="modal" data-target="#myModal">Symbol Table File 
-					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
-				</a><br>
-                <a class="link" id="symbol_driver.js"  href="" data-toggle="modal" data-target="#myModal">Driver File					
-					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
-				</a><br>
-                <a class="link" href="data/symboltable.zip">Collective Files					
-					<span class="text">Click to download Zip File</span> 
-				</a><br>
+                    <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+                </a><br>
+                <a class="link" id="symbol_driver.js"  href="" data-toggle="modal" data-target="#myModal">Driver File                   
+                    <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+                </a><br>
+                <a class="link" href="second.html">Collective Files                 
+                    <span class="text">Click to download Zip File</span> 
+                </a><br>
             </p>
         </div>
         <div class="column 2" value="2">
             <p class="text title">Scanner</p>
             <p class="text">
-                <a class="link" id="cscanner.js" href="" data-toggle="modal" data-target="#myModal">Scanner File					
-					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
-				</a><br>
-                <a class="link" href="data/demo1.zip">Scanner Test Files					
-					<span class="text">Click to download Zip File</span> 
-				</a><br>
-                <a class="link" href="data/scanner.zip">Collective Files					
-					<span class="text">Click to download Zip File</span> 
-				</a><br>
+                <a class="link" id="cscanner.js" href="" data-toggle="modal" data-target="#myModal">Scanner File                    
+                    <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+                </a><br>
+                <a class="link" href="second.html#scan">Collective Files                    
+                    <span class="text">Click to download Zip File</span> 
+                </a><br>
 
             </p>
         </div>
         <div class="column 3" value="3">
             <p class="text title">Parser</p>
             <p class="text">
-                <a class="link" id="cparser.js"  href="" data-toggle="modal" data-target="#myModal">Parser File					
-					<span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
-				</a><br>
-                <a class="link" href="data/demo1.zip">Parser Unit Tests					
-					<span class="text">Click to download Zip File</span> 
-				</a><br>
-                <a class="link" href="data/parser.zip">Collective Files					
-					<span class="text">Click to download Zip File</span> 
-				</a><br>
+                <a class="link" id="cparser.js"  href="" data-toggle="modal" data-target="#myModal">Parser File                 
+                    <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
+                </a><br>
+                <a class="link" href="second.html#parse">Collective Files                 
+                    <span class="text">Click to download Zip File</span> 
+                </a><br>
             </p>
         </div>
         <div class="column 4" value="4">
             <p class="text title">AST</p>
             <p class="text">
-                <a class="link" href="#none">AST File					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">AST Unit Tests					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">Driver File					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">Collective Files					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
+                <a class="link" href="#none">AST Tree                   
+                    <span class="text">Completely Inactive.</span> 
+                </a><br>
+                <a class="link" href="second.html#ast">Collective Files                 
+                    <span class="text">Completely Inactive.</span> 
+                </a><br>
             </p>
         </div>
         <div class="column 5" value="5">
@@ -147,7 +138,163 @@
             </p>
         </div>
     </nav>
-	
+	<div class="download-wrap">
+        <div class="download-content">
+            <div class ="download-text">
+
+                <!-- Symbol Table -->
+                <p class="download-title">Symbol Table</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+                    Arrays - Fully Functional with symbol table.<br>
+                    Pointers - Fully Functional with symbol table.<br>
+                    Functions - Fully Functional with symbol table.<br>
+                    Constants - Fully Functional with symbol table.<br>
+                    Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+                    Looping - Fully Functional with symbol table.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    <code>sudo apt-get install python-pip</code><br>
+                    <code>sudo pip install ply bintrees</code>
+                    <br>
+                </p>
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+                    To run the driver for the symbol table, please use this command. <br>
+                    <code>python symboltable_driver.py</code>
+                </p>
+
+                <a id="scan" class="sub link2" href="data/symboltable.zip">Download</a><hr>
+
+                <!-- Scanner -->
+                <p class="download-title">Scanner</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+                    Arrays - Fully Functional.<br>
+                    Pointers - Fully Functional.<br>
+                    Functions - Fully Functional.<br>
+                    Constants - Fully Functional.<br>
+                    Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+                    Looping - Fully Functional.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    StrConv - This module allows for the type inference needed for type checking <br>
+                    TermColor - Chase has OCD for coloring text <br>
+                    <code>sudo apt-get install python-pip strconv termcolor</code><br>
+                    <code>sudo pip install ply bintrees</code>
+                    <br>
+                </p>
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+                    To run the driver, please use this command. <br>
+                    <code>python driver.py</code>
+                </p>
+                <a id="parse" class="sub link2" href="data/scanner.zip">Download</a><hr>
+
+                <!-- Parser -->
+                <p class="download-title">Parser</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+                    Arrays - Fully Functional.<br>
+                    Pointers - Fully Functional.<br>
+                    Functions - Fully Functional.<br>
+                    Constants - Fully Functional.<br>
+                    Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+                    Looping - Fully Functional.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    StrConv - This module allows for the type inference needed for type checking <br>
+                    TermColor - Chase has OCD for coloring text <br>
+                    <code>sudo apt-get install python-pip</code><br>
+                    <code>sudo pip install ply bintrees strconv termcolor</code>
+                    <br>
+                </p>
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+                    To run the driver, please use this command. <br>
+                    <code>python driver.py</code>
+                </p>
+                <a id="ast" class="sub link2" href="data/parser.zip">Download</a><hr>
+
+                <!-- Abstract Syntax Table -->
+                <p class="download-title">Abstract Syntax Table</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+                    N-Arrays - Fully Functional.<br>
+                    Functions - Fully Functional.<br>
+                    Constants - Fully Functional.<br>
+                    Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                    For Loop - Fully Functional.<br>
+                    While Loop - Fully Functional.<br>
+                    DoWhile Loop - Fully Functional.<br>
+                    Function Declarations - Fully Functional.<br>
+                    Function Definitions - Fully Functional.<br>
+                    Variable Declarions/Calls - Fully Functional.<br>
+                    If/Else - Fully Functional.<br>
+                    Simple Assignment - Fully Functional.<br>
+                    Type Checking - Fully Functional.<br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    StrConv - This module allows for the type inference needed for type checking <br>
+                    TermColor - Chase has OCD for coloring text <br>
+                    <code>sudo apt-get install python-pip</code><br>
+                    <code>sudo pip install ply bintrees strconv termcolor</code>
+                    <br>
+                </p>
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+                    To run the driver, please use this command. <br>
+                    <code>python driver.py</code>
+                </p>
+                <a class="sub link2" href="">Download</a>
+
+                <p> <br><br><br><br></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog custom">
+        <div class="modal-content customH">
+          <div class="modal-body">
+              <iframe id="target" src="http://wikipedia.com" width="100%" height="850px" frameborder="0" allowtransparency="true"></iframe>  
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
