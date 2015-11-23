@@ -72,28 +72,28 @@
         </div>
         <!-- /.container -->
 
-        <div class="column 1">
+         <div class="column 1">
             <p class="text title">Symbol Table</p>
             <p class="text">
-                <a class="link" id="symboltable.js" href="" data-toggle="modal" data-target="#myModal">Symbol Table File 
+                <a class="link" id="symboltable.js" href="" data-toggle="modal" data-target="#myModal">Symbol Table Preview 
                     <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
                 </a><br>
-                <a class="link" id="symbol_driver.js"  href="" data-toggle="modal" data-target="#myModal">Driver File                   
+                <a class="link" id="symbol_driver.js"  href="" data-toggle="modal" data-target="#myModal">Driver Preview                   
                     <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
                 </a><br>
-                <a class="link" href="second.html">Collective Files                 
-                    <span class="text">Click to download Zip File</span> 
+                <a class="link" href="download.html">Symbol Table Download                 
+                    <span class="text">Click to enter download page.</span> 
                 </a><br>
             </p>
         </div>
         <div class="column 2" value="2">
             <p class="text title">Scanner</p>
             <p class="text">
-                <a class="link" id="cscanner.js" href="" data-toggle="modal" data-target="#myModal">Scanner File                    
+                <a class="link" id="cscanner.js" href="" data-toggle="modal" data-target="#myModal">Scanner Preview                   
                     <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
                 </a><br>
-                <a class="link" href="second.html#scan">Collective Files                    
-                    <span class="text">Click to download Zip File</span> 
+                <a class="link" href="download.html#scan">Scanner Download                    
+                    <span class="text">Click to enter download page.</span> 
                 </a><br>
 
             </p>
@@ -101,47 +101,41 @@
         <div class="column 3" value="3">
             <p class="text title">Parser</p>
             <p class="text">
-                <a class="link" id="cparser.js"  href="" data-toggle="modal" data-target="#myModal">Parser File                 
+                <a class="link" id="cparser.js"  href="" data-toggle="modal" data-target="#myModal">Parser Preview                 
                     <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
                 </a><br>
-                <a class="link" href="second.html#parse">Collective Files                 
-                    <span class="text">Click to download Zip File</span> 
+                <a class="link" href="download.html#parse">Parser Download               
+                    <span class="text">Click to enter download page.</span> 
                 </a><br>
             </p>
         </div>
         <div class="column 4" value="4">
             <p class="text title">AST</p>
             <p class="text">
-                <a class="link" id="asttree.js"  href="" data-toggle="modal" data-target="#myModal">AST Tree                   
-                    <span class="text">Completely Inactive.</span> 
+                <a class="link" id="asttree.js"  href="" data-toggle="modal" data-target="#myModal">AST Preview                  
+                    <span class="text">Click to create a preview. To download, Click the Collective Files below.</span> 
                 </a><br>
-                <a class="link" href="second.html#ast">Collective Files                 
-                    <span class="text">Completely Inactive.</span> 
+                <a class="link" href="download.html#ast">AST Download                 
+                    <span class="text">Click to enter download page.</span> 
                 </a><br>
             </p>
         </div>
         <div class="column 5" value="5">
             <p class="text title">Code Gen</p>
             <p class="text">
-                <a class="link" href="#none">Code Gen File					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">Code Gen Unit Tests					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">Driver File					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
-                <a class="link" href="#none">Collective Files					
-					<span class="text">Completely Inactive.</span> 
-				</a><br>
+                <a class="link" href="download.html#inter">TAC Generation Download               
+                    <span class="text">Click to enter download page.</span> 
+                </a><br>
             </p>
         </div>
     </nav>
 	<div class="download-wrap">
         <div class="download-content">
             <div class ="download-text">
-
+				
+				<!-- Warning -->
+				<p class="note">Please note that each collection of files has been unaltered since their upload.</p>
+				<p class="note">The newest files are towards the bottom.</p>
                 <!-- Symbol Table -->
                 <p class="download-title">Symbol Table</p>
                 <p class="sub">Features: <p>
@@ -196,8 +190,8 @@
                     Bintrees - This module allows for an easy of use Red-Black Tree<br>
                     StrConv - This module allows for the type inference needed for type checking <br>
                     TermColor - Chase has OCD for coloring text <br>
-                    <code>sudo apt-get install python-pip strconv termcolor</code><br>
-                    <code>sudo pip install ply bintrees</code>
+                    <code>sudo apt-get install python-pip</code><br>
+                    <code>sudo pip install ply bintrees strconv termcolor</code>
                     <br>
                 </p>
                 <p class="sub">Instructions: <p>   
@@ -278,7 +272,55 @@
                     To run the driver, please use this command. <br>
                     <code>python driver.py</code>
                 </p>
-                <a class="sub link2" href="data/ast.zip">Download</a>
+                <a class="sub link2" id="inter" href="data/ast.zip">Download</a><hr>
+				
+                <!-- Intermediate Code Generator -->
+                <p class="download-title">Intermediate Code Generator</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(long, char, int, etc.).<br>
+                    N-Arrays - Fully Functional.<br>
+                    Functions - Fully Functional.<br>
+                    Constants - Fully Functional.<br>
+                    Recognize Syntax Errors - Can locate errors and provide feedback.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                    For Loop - Fully Functional.<br>
+                    While Loop - Fully Functional.<br>
+                    DoWhile Loop - Fully Functional.<br>
+                    Function Declarations - Fully Functional.<br>
+                    Function Definitions - Fully Functional.<br>
+                    Variable Declarions/Calls - Fully Functional.<br>
+                    If/Else - Fully Functional.<br>
+                    Simple Assignment - Fully Functional.<br>
+                    Type Checking - Fully Functional.<br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    StrConv - This module allows for the type inference needed for type checking <br>
+                    TermColor - Chase has OCD for coloring text <br>
+                    <code>sudo apt-get install python-pip</code><br>
+                    <code>sudo pip install ply bintrees strconv termcolor</code>
+                    <br>
+                </p>
+                <p class="sub">Examples: <p>   
+                <p class="regular">
+                    <a class="link link2" id="iterfact.js"  href="" data-toggle="modal" data-target="#myModal">Original Code</a>
+					- 
+					<a class="link link2" id="tac1.tac"  href="" data-toggle="modal" data-target="#myModal">TAC</a><br>
+                </p>
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+					<code>-i</code> : Change Output of 3ac File Output <br>
+					<code>-c</code> : Turning Code On and Off<br>
+					To run the driver, please use this command. <br>
+                    <code>python driver.py</code>
+                </p>
+                <a class="sub link2" href="">Download</a>
 
                 <p> <br><br><br><br></p>
 
@@ -290,7 +332,7 @@
       <div class="modal-dialog custom">
         <div class="modal-content customH">
           <div class="modal-body">
-              <iframe id="target" src="http://wikipedia.com" width="100%" height="850px" frameborder="0" allowtransparency="true"></iframe>  
+              <iframe id="target" src="" width="100%" height="850px" frameborder="0" allowtransparency="true"></iframe>  
           </div>
         </div>
       </div>

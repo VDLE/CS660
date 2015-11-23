@@ -87,6 +87,7 @@ a.link2:hover{
 	text-decoration: none;
 }
 
+
 #menu{
 	background-color: rgba(0,46,98,.95);
 	color: #89cff0;
@@ -215,6 +216,14 @@ p.regular{
 	color: #BEBEBE;
 	padding-left: 5%;
 	font-size:150%;
+	font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+p.note{
+	color: #FF0000;
+	padding-left: 0%;
+	font-size:200%;
+	font-weight: bold;
 	font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 
