@@ -64,7 +64,7 @@
                         <a class="nav-choice" id="4">Abstract Syntax Table</a>
                     </li>
                     <li>
-                        <a class="nav-choice" id="5">Intermediate Code Generator</a>
+                        <a class="nav-choice" id="5">Code Generator</a>
                     </li>
                 </ul>
             </div>
@@ -124,6 +124,9 @@
             <p class="text title">Code Gen</p>
             <p class="text">
                 <a class="link" href="download.html#inter">TAC Generation Download               
+                    <span class="text">Click to enter download page.</span>
+				</a><br>					
+                <a class="link" href="download.html#asm">ASM Generation Download               
                     <span class="text">Click to enter download page.</span> 
                 </a><br>
             </p>
@@ -136,6 +139,7 @@
 				<!-- Warning -->
 				<p class="note">Please note that each collection of files has been unaltered since their upload.</p>
 				<p class="note">The newest files are towards the bottom.</p>
+				
                 <!-- Symbol Table -->
                 <p class="download-title">Symbol Table</p>
                 <p class="sub">Features: <p>
@@ -322,8 +326,59 @@
 					To run the driver, please use this command. <br>
                     <code>python driver.py</code>
                 </p>
-                <a class="sub link2" href="data/3AC.zip">Download</a>
+                <a class="sub link2" id="asm" href="data/3AC.zip">Download</a><hr>
 
+				
+                <!-- Assembly Code Generator -->
+                <p class="download-title">Assembly Code Generator</p>
+                <p class="sub">Features: <p>
+                <p class="bold">Currently Operational: <p>      
+                <p class="regular">
+                    Type Definitions - Capable of handling simple variable types(char, int).<br>
+                    N-Arrays - Fully Functional.<br>
+                    Functions - Fully Functional.<br>
+                    Constants - Fully Functional.<br>
+                    Recognize Syntax Errors - Can locate errors and provide IMPROVED feedback.<br>
+                    Constant Value Arithmetic - Capable of optimizing simple arithmetic.<br>
+                    For Loop - Fully Functional.<br>
+                    While Loop - Fully Functional.<br>
+                    DoWhile Loop - Fully Functional.<br>
+                    Function Declarations - Fully Functional.<br>
+                    Function Definitions - Fully Functional.<br>
+                    Variable Declarions/Calls - Fully Functional.<br>
+                    If/Else - Fully Functional.<br>
+                    Simple Assignment - Fully Functional.<br>
+                    Type Checking - Fully Functional.<br>
+                    Pointer - Simple 1D Pointers <br>
+                    Structs - No Array of Structs <br>
+                </p>
+                <p class="sub">Dependencies: <p>   
+                <p class="regular">
+                    Python - Main Language of this Compiler Project<br>
+                    PiP - This module allows for easy of use in installing these python modules. <br>
+                    PLY - This module mimics the C equivalent of Flex and Yacc <br>
+                    Bintrees - This module allows for an easy of use Red-Black Tree<br>
+                    StrConv - This module allows for the type inference needed for type checking <br>
+                    TermColor - Chase has OCD for coloring text <br>
+					Spim - MIPS compiler used for testing purposes through command line <br>
+                    <code>sudo apt-get install python-pip spim</code><br>
+                    <code>sudo pip install ply bintrees strconv termcolor</code>
+                    <br>
+                </p>
+               <!-- <p class="sub">Examples: <p>   
+                <p class="regular">
+                    <a class="link link2" id="iterfact.js"  href="" data-toggle="modal" data-target="#myModal">Original Code</a>
+					- 
+					<a class="link link2" id="tac1.js"  href="" data-toggle="modal" data-target="#myModal">TAC</a><br>
+                </p> -->
+                <p class="sub">Instructions: <p>   
+                <p class="regular">
+					To run the driver, please use this command: <br>
+                    <code>python driver.py input.file</code> <br>
+					To run the ASM, use this command: <br>
+					<code>spim a input.asm</code> <br>
+                </p>
+                <a class="sub link2" href="data/3AC.zip">Download</a>
                 <p> <br><br><br><br></p>
 
             </div>
